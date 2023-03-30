@@ -1,0 +1,21 @@
+coverage:
+  status:
+    patch:
+      default:
+        target: auto
+        threshold: 0%
+        base: auto
+        flags: 
+          - unit
+        paths:
+          - src
+        if_ci_failed: error
+        informational: false
+        only_pulls: false
+
+
+comment:
+  layout: "reach, diff, flags, files" 
+  require_changes: false
+  require_base: true
+  require_head: true
